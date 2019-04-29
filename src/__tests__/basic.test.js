@@ -171,6 +171,34 @@ describe('GlobalStyleComponent', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  test('GlobalStyleComponent can inject without React', () => {
+    const GlobalStyle = GlobalStyleComponent.globalStyle;
+    const props = {
+      dark: true,
+      theme: { typography: { fontFamily: 'Roboto' } },
+    };
+    GlobalStyle.renderStyles(props);
+
+    outputCss = `.div {
+      color: blue;
+    }
+    .my-class2 {
+      margin-bottom: 10rem;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+    }
+    html {
+      background-color: blue;
+    }
+    body {
+      color: black;
+      font-family: Roboto;
+    }`;
+
+    expectCSSMatches(outputCss);
+  });
+
   test('GlobalStyleComponent with default theme', () => {
     const component = TestRenderer.create(<GlobalStyleComponent dark />);
 

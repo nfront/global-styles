@@ -4,7 +4,7 @@
 
 # global-styles
 
-A `React`-based package for creating independent global CSS styles, and automatically placing them at the top of the `<head>` element.
+A package for creating independent global CSS styles, and automatically placing them at the top of the `<head>` element.
 
 This package was originally created to be used together with [gatsby-plugin-global-styles](https://github.com/nfront/gatsby-plugin-global-styles).
 
@@ -48,7 +48,7 @@ Here, `reset` and `globalStyle` are two JavaScript files that each contain their
 As an example, in `src/styles/globalStyle`:
 
 ```javascript
-import { css } from 'gatsby-plugin-global-styles';
+import { css } from 'global-styles';
 
 const globalStyles = css`
   .my-class2 {
@@ -63,7 +63,16 @@ const globalStyles = css`
 export default globalStyles;
 ```
 
-Finally, at the root level of your React code:
+Finally, at the root level of your app / during your app's boot sequence:
+
+```javascript
+import GlobalStyleComponent from './src/styles/GlobalStyleComponent';
+
+// Compiles the style element and injects it in head
+GlobalStyleComponent.globalStyle.renderStyles();
+```
+
+Or, if using React, at the root level of your React code:
 
 ```javascript
 import GlobalStyleComponent from './src/styles/GlobalStyleComponent';
@@ -144,7 +153,22 @@ const globalStyles = css`
 export default globalStyles;
 ```
 
-At the root level of your React code:
+At the root level of your app / during your app's boot sequence:
+
+```javascript
+import GlobalStyleComponent from './src/styles/GlobalStyleComponent';
+
+const GlobalStyle = GlobalStyleComponent.globalStyle;
+const props = {
+  light: true,
+  theme: { typography: { fontFamily: 'Roboto' } },
+};
+
+// Compiles the style element and injects it in head
+GlobalStyle.renderStyles(props);
+```
+
+Or, if using React, at the root level of your React code:
 
 ```javascript
 import GlobalStyleComponent from './src/styles/GlobalStyleComponent';
