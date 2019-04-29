@@ -5,7 +5,7 @@ node_js:
 
 jobs:
   include:
-    # Define the release stage which runs semantic-release
+    # Define the release stage that runs semantic-release
     - stage: release
       node_js: lts/*
       before_script:
