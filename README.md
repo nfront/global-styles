@@ -141,7 +141,7 @@ export default muiTheme;
 In `src/styles/globalStyle`:
 
 ```javascript
-import { css } from 'gatsby-plugin-global-styles';
+import { css } from 'global-styles';
 
 const globalStyles = css`
   body {
