@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GlobalStyleComponent GlobalStyleComponent can return a React component, which first runs createStyles(props), but does not inject anything into head. 1`] = `
+<style
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "
+      .div {
+        color: blue;
+      }
+    
+      .my-class2 {
+        margin-bottom: 10rem;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+      }
+      html {
+        background-color: blue;
+      }
+      body {
+        color: white;
+        font-family: Arial;
+      }
+    ",
+    }
+  }
+  id="gatsby-plugin-global-styles404084579"
+/>
+`;
+
+exports[`GlobalStyleComponent GlobalStyleComponent injects correct CSS styles in head 1`] = `null`;
+
+exports[`GlobalStyleComponent GlobalStyleComponent inserts after another head style, if one exists 1`] = `null`;
+
+exports[`GlobalStyleComponent GlobalStyleComponent overrides old head style, if style already exists 1`] = `null`;
+
+exports[`GlobalStyleComponent GlobalStyleComponent should give warning if run with children 1`] = `null`;
+
+exports[`GlobalStyleComponent GlobalStyleComponent with default theme 1`] = `null`;
