@@ -77,14 +77,17 @@ Or, if using React, at the root level of your React code:
 ```javascript
 import GlobalStyleComponent from './src/styles/GlobalStyleComponent';
 
+// Compiles the style element and injects it in head
 <GlobalStyleComponent />
 ```
 
 ## How to use props (like theme) in a global style file
 
-To use `props`, like a theme, in a global style sheet, pass the `props` to the React component `GlobalStyleComponent`.
+To use `props`, like a theme, in a global style sheet, pass in the `props`.
 
-A theme can be any module exporting a normal object. Its propertis are then accessible inside any global style sheet:
+A theme can be any module exporting a normal object. Its propertis are then accessible inside any global style sheet.
+
+Here is a full example:
 
 In `./src/styles/theme`:
 
@@ -157,11 +160,12 @@ At the root level of your app / during your app's boot sequence:
 
 ```javascript
 import GlobalStyleComponent from './src/styles/GlobalStyleComponent';
+import theme from './src/styles/theme';
 
 const GlobalStyle = GlobalStyleComponent.globalStyle;
 const props = {
   light: true,
-  theme: { typography: { fontFamily: 'Roboto' } },
+  theme: theme,
 };
 
 // Compiles the style element and injects it in head
