@@ -39,4 +39,4 @@ babel.*
 .travis.*
 .eslint.*
 .gitignore
-.cache
+.cache/
