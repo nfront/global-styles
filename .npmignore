@@ -39,4 +39,5 @@ babel.*
 .travis.*
 .eslint.*
 .gitignore
-.cache/
+.cache
+cc-test-*
