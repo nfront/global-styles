@@ -2,7 +2,7 @@
 
 ![Twitter URL](https://img.shields.io/twitter/url/https/github.com/nfront/global-styles.svg?style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/magnusriga.svg?label=Follow&style=social)
 
-# global-styles
+# @nfront/global-styles
 
 A package for creating independent global CSS styles, and automatically placing them at the top of the `<head>` element.
 
