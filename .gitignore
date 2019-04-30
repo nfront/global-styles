@@ -6,6 +6,7 @@ bundle-stats.html
 test-results.json
 package-lock.json
 yarn.lock
+.cache/
 
 # Coverage directory used by tools like istanbul
 coverage/
