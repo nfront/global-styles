@@ -37,7 +37,7 @@ examples
 jest.*
 babel.*
 .travis.*
-.eslint.*
+.eslint*
 .gitignore
 .cache
 cc-test-*
