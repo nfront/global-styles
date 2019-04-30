@@ -3,12 +3,6 @@ import flatten from '../utils/flatten';
 import stringifyRules from '../utils/stringifyRules';
 
 export default class GlobalStyle {
-  rules;
-
-  compiledStyles;
-
-  elementId;
-
   constructor(rules, elementId) {
     this.rules = rules;
     this.elementId = elementId;

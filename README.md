@@ -12,6 +12,10 @@ This package was originally created to be used together with [gatsby-plugin-glob
 
 `npm install --save @nfront/global-styles`
 
+or:
+
+`yarn add @nfront/global-styles`
+
 ## Why to use
 
 `global-styles` automatically combines your own global style sheets into one collective global `style` tag, and makes sure the global `style` tag ends up where you want it to be in the `<head>` element.

@@ -32,3 +32,10 @@ flow-typed
 coverage
 decls
 examples
+
+# Misc
+jest.*
+babel.*
+.travis.*
+.eslint.*
+.gitignore
