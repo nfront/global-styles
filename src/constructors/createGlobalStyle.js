@@ -6,7 +6,7 @@ import determineTheme from '../utils/determineTheme';
 
 export default function createGlobalStyle(strings, ...interpolations) {
   const rules = css(strings, ...interpolations);
-  const id = `gatsby-plugin-global-styles${hashCode(JSON.stringify(rules))}`;
+  const id = `GlobalStyle${hashCode(JSON.stringify(rules))}`;
   const style = new GlobalStyle(rules, id);
 
   const GlobalStyleComponent = props => {
