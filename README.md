@@ -35,7 +35,7 @@ Lastly, it is also possible to pass in props, like a theme, to your global style
 In `src/utils/GlobalStyleComponent`:
 
 ```javascript
-import { createGlobalStyle } from 'global-styles';
+import { createGlobalStyle } from '@nfront/global-styles';
 import reset from '../styles/reset';
 import globalStyle from '../styles/globalStyle';
 
@@ -52,7 +52,7 @@ Here, `reset` and `globalStyle` are two JavaScript files that each contain their
 As an example, in `src/styles/globalStyle`:
 
 ```javascript
-import { css } from 'global-styles';
+import { css } from '@nfront/global-styles';
 
 const globalStyles = css`
   .my-class2 {
