@@ -1,6 +1,7 @@
 {
   "name": "@nfront/global-styles",
   "description": "A package for creating independent global CSS styles, and automatically placing them at the top of the `<head>` element. Use with for instance gatsby-plugin-global-styles: https://github.com/nfront/gatsby-plugin-global-styles",
+  "source": "src/index.js",
   "main": "dist/index.js",
   "author": "Magnus Rinnan Gaarder <magnus.rinnan@gmail.com>",
   "license": "MIT",
@@ -8,8 +9,8 @@
     "test": "jest --watch --testPathPattern=test\\.[jt]sx?$",
     "unit": "jest --testPathPattern=test\\.[jt]sx?$",
     "integration": "jest --testPathPattern=ispec\\.[jt]sx?$",
-    "dev": "parcel ./src/index.js",
-    "build": "cross-env NODE_ENV=production parcel build ./src/index.js",
+    "dev": "microbundle watch",
+    "build": "microbundle",
     "watch": "babel -w src --out-dir dist --ignore **/__tests__",
     "travis": "git push origin master",
     "publishManually": "npm publish",
@@ -56,7 +57,7 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.6.0",
     "jest": "^24.7.1",
-    "parcel-bundler": "^1.12.3",
+    "microbundle": "^0.11.0",
     "prettier": "^1.17.0",
     "react-test-renderer": "^16.8.6",
     "semantic-release": "^15.13.3"

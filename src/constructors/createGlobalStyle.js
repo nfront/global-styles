@@ -27,7 +27,7 @@ export default function createGlobalStyle(strings, ...interpolations) {
     context.theme = determineTheme(props, { typography: { fontFamily: 'Arial' } });
     globalStyle.renderStyles(context);
 
-    return <>{null}</>;
+    return <React.Fragment>{null}</React.Fragment>;
   };
 
   // Useful if we choose not to render GlobalStyleComponent,
