@@ -1,6 +1,6 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/9b92debd461a76f384d6/maintainability)](https://codeclimate.com/github/nfront/global-styles/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/9b92debd461a76f384d6/test_coverage)](https://codeclimate.com/github/nfront/global-styles/test_coverage) [![Build Status](https://travis-ci.org/nfront/global-styles.svg?branch=master)](https://travis-ci.org/nfront/global-styles) [![Greenkeeper badge](https://badges.greenkeeper.io/nfront/global-styles.svg)](https://greenkeeper.io/) [![npm bundle size](https://badgen.net/bundlephobia/min/@nfront/global-styles)](https://bundlephobia.com/result?p=@nfront/global-styles) [![npm (scoped)](https://img.shields.io/npm/v/@nfront/global-styles.svg)](https://www.npmjs.com/package/@nfront/global-styles)
+[![Build Status](https://travis-ci.org/nfront/global-styles.svg?branch=master)](https://travis-ci.org/nfront/global-styles) [![Greenkeeper badge](https://badges.greenkeeper.io/nfront/global-styles.svg)](https://greenkeeper.io/) [![Maintainability](https://api.codeclimate.com/v1/badges/9b92debd461a76f384d6/maintainability)](https://codeclimate.com/github/nfront/global-styles/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/9b92debd461a76f384d6/test_coverage)](https://codeclimate.com/github/nfront/global-styles/test_coverage) [![npm bundle size](https://badgen.net/bundlephobia/min/@nfront/global-styles)](https://bundlephobia.com/result?p=@nfront/global-styles) [![npm (scoped)](https://img.shields.io/npm/v/@nfront/global-styles.svg)](https://www.npmjs.com/package/@nfront/global-styles)
 
-![Twitter URL](https://img.shields.io/twitter/url/https/github.com/nfront/global-styles.svg?style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/magnusriga.svg?label=Follow&style=social)
+[![Twitter URL](https://img.shields.io/twitter/url/https/github.com/nfront/global-styles.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20this%20npm%20package:&url=https%3A%2F%2Fgithub.com%2Fnfront%2Fglobal-styles) [![Twitter Follow](https://img.shields.io/twitter/follow/magnusriga.svg?label=Follow&style=social)](https://twitter.com/intent/follow?screen_name=magnusriga)
 
 # @nfront/global-styles
 
@@ -24,7 +24,7 @@ By default, the global `style` tag is placed at the top of `<head>`.
 
 This package is particularly useful when utilizing several CSS styling systems.
 
-For example, your site might be using `styled-components` and `Material-UI`. If you want to add your own **global** styling to this mix, it is important that the order of the `style` tags in the website's or app's `<head>` element is correct (properties in lower `style` tags overwrite the same properties in `style` tags above it).
+For example, you might be using both `styled-components` and `Material-UI`. If you want to add your own **global** styling to this mix, it is important that the order of the `style` tags in the website's or app's `<head>` element is correct (properties in lower `style` tags overwrite the same properties in `style` tags above it).
 
 As mentioned, this package allows you to create several independent style sheets and will automatically compose those together and add them as part of one `style` tag at the top of `<head>`. Global style sheets could for instance include your own personal global style sheet and a style sheet such as `normalize`.
 
