@@ -24,7 +24,7 @@ By default, the global `style` tag is placed at the top of `<head>`.
 
 This package is particularly useful when utilizing several CSS styling systems.
 
-For example, your site might be using `styled-components` and `Material-UI`. If you want to add your own **global** styling to this mix, it is important that the order of the `style` tags in the website's or app's `<head>` element is correct (properties in lower `style` tags overwrite the same properties in `style` tags above it).
+For example, you might be using both `styled-components` and `Material-UI`. If you want to add your own **global** styling to this mix, it is important that the order of the `style` tags in the website's or app's `<head>` element is correct (properties in lower `style` tags overwrite the same properties in `style` tags above it).
 
 As mentioned, this package allows you to create several independent style sheets and will automatically compose those together and add them as part of one `style` tag at the top of `<head>`. Global style sheets could for instance include your own personal global style sheet and a style sheet such as `normalize`.
 
